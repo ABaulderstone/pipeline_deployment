@@ -1,5 +1,10 @@
 {
     "environments": {
-        
+        "production": {
+            "addons": ["heroku-postgresql:hobby-dev"],
+            "scripts": {
+                "postdeploy": "rails db:schema:load db:seed"
+            }
+        }
     }
 }
