@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+ posts = [{title: "My first post", body:"Rails is awesome"}, {title: "My second post", body:"oh no!"}, {title: "My first post", body:"heroku what the heck??"}, ]
+
+ if Post.count == 0 
+    posts.each do |post|
+        Post.create(title: post[:title], body: post[:body])
+    end 
+ end 
