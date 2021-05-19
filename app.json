@@ -1,8 +1,5 @@
 {
     "environments": {
-        "staging": {
-            "stack": "heroku-18"
-
-        }
+        
     }
 }
